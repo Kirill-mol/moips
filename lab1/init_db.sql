@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS product_specification
 (
     id   SERIAL NOT NULL,
     product_id INTEGER NOT NULL,
-    child_id INTEGER UNIQUE NOT NULL,
+    child_id INTEGER NOT NULL,
     PRIMARY KEY (id),
     CONSTRAINT fk_child
         FOREIGN KEY (child_id)
